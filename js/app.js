@@ -2,6 +2,7 @@
 
 var chiApp = angular.module('chiApp', [
     'ngRoute',
+    'ngDialog',
     'chiAppControllers'
 ]);
 

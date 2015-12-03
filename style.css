@@ -33,6 +33,7 @@ html {
     color: white;
     text-align: center;
     height: 80px;
+    cursor: pointer;
 }
 
 .control > h2 {
@@ -41,6 +42,7 @@ html {
 
 .add-space {
     padding: 25px;
+    cursor: pointer;
 }
 
 .icon-bar > img {

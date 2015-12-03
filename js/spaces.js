@@ -9,16 +9,7 @@ var spaces = [
         ]
     },
     {
-        name: 'Dining Room',
-        targets: [
-            'sound',
-            'light',
-            'tvplay',
-            'temp'
-        ]
-    },
-    {
-        name: 'Living Room',
+        name: 'Media Room',
         targets: [
             'light',
             'sound',
@@ -27,12 +18,21 @@ var spaces = [
         ]
     },
     {
-        name: 'Dining Room',
+        name: 'Kitchen',
         targets: [
-            'sound',
             'light',
-            'tvplay',
-            'temp'
+            'sound',
+            'temp',
+            'oven'
+        ]
+    },
+    {
+        name: 'Office',
+        targets: [
+            'light',
+            'sound',
+            'temp',
+            'computer'
         ]
     }
 ];
