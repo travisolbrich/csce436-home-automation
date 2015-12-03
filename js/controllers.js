@@ -8,7 +8,15 @@ chiAppControllers.controller('SpacesController', ['$scope', '$rootScope', 'ngDia
             $scope.spaces = spaces;
 
             $scope.addSpace = function () {
-                ngDialog.open({template: 'partials/addSpace.html'})
+                ngDialog.open({template: 'partials/addSpace.html', scope: $scope})
+            };
+
+            $scope.finishAddSpace = function(spaceName) {
+                if(spaceName != null) {
+                    spaces.push({name: spaceName, targets: []});
+                    ngDialog.closeAll();
+                    $scope.spaces = spaces;
+                }
             }
         }]
 );
