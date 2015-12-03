@@ -13,6 +13,10 @@ chiApp.config(['$routeProvider',
                 templateUrl: 'partials/spaces.html',
                 controller: 'SpacesController'
             })
+            .when('/spaces/:spaceId', {
+                templateUrl: 'partials/space.html',
+                controller: 'SpaceController'
+            })
             .otherwise({
                 redirectTo: '/spaces'
             })

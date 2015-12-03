@@ -1,5 +1,5 @@
 <div class="pure-g controls">
-    <div class="pure-u-1 pure-u-md-1-3" ng-repeat="space in spaces">
+    <div class="pure-u-1 pure-u-md-1-3" ng-repeat="space in spaces" ng-click="goToSpace(space.id)">
         <div class="control">
             <h2>{{space.name}}</h2>
             <div class="icon-bar">

@@ -1,6 +1,7 @@
 var spaces = [
     {
         name: 'Living Room',
+        id: 'living-room',
         targets: [
             'light',
             'sound',
@@ -10,6 +11,7 @@ var spaces = [
     },
     {
         name: 'Media Room',
+        id: 'media-room',
         targets: [
             'light',
             'sound',
@@ -19,6 +21,7 @@ var spaces = [
     },
     {
         name: 'Kitchen',
+        id: 'kitchen',
         targets: [
             'light',
             'sound',
@@ -28,6 +31,7 @@ var spaces = [
     },
     {
         name: 'Office',
+        id: 'office',
         targets: [
             'light',
             'sound',
