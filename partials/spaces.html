@@ -1,0 +1,16 @@
+<div class="pure-g controls">
+    <div class="pure-u-1 pure-u-md-1-3" ng-repeat="space in spaces">
+        <div class="control">
+            <h2>{{space.name}}</h2>
+            <div class="icon-bar">
+                <img src="img/{{target}}-inverted.png" ng-repeat="target in space.targets"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="pure-u-1 pure-u-md-1-3" ng-click="addSpace()">
+        <div class="control">
+            <h2 class="add-space">+ Add Space</h2>
+        </div>
+    </div>
+</div>
