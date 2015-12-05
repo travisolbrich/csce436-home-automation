@@ -57,3 +57,14 @@ html {
     height: 35px;
     padding: 5px 8px;
 }
+
+.header > a {
+    top:0;
+    left:0;
+    padding: 13px 20px;
+    position: absolute;
+}
+
+.header > a > img {
+    height: 50px;
+}
