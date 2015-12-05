@@ -37,22 +37,35 @@ chiAppControllers.controller('SpaceController', ['$scope', '$rootScope', 'ngDial
                 }
             });
 
+            $scope.getTargetName = function(targetId) {
+                var name;
+                targets.forEach(function(target, index) {
+                    console.log(target.id);
+                    if(target.id == targetId) {
+                        name = target.name;
+                    }
+                });
+                return name;
+            };
+
             $rootScope.title = space.name;
             $scope.targets = space.targets;
+            $scope.availableTargets = targets;
 
-            $scope.addSpace = function () {
-                ngDialog.open({template: 'partials/addSpace.html', scope: $scope})
+            $scope.addTarget = function () {
+                ngDialog.open({template: 'partials/addTarget.html', scope: $scope})
             };
 
             $scope.goToSpace = function(spaceName) {
                 $location.path('spaces/'+spaceName);
             };
 
-            $scope.finishAddSpace = function(spaceName) {
-                if(spaceName != null) {
-                    spaces.push({name: spaceName, targets: []});
+            $scope.finishAddTarget = function(targetId) {
+                if(targetId != null) {
+                    space.targets.push(targetId);
+                    spaces[spaceIndex] = space;
                     ngDialog.closeAll();
-                    $scope.spaces = spaces;
+                    $scope.targets = space.targets;
                 }
             }
         }]

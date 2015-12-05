@@ -1,0 +1,8 @@
+<p>Please press the pariring button on your device. Here is a list of devices ready to pair:</p><br>
+<form class="pure-form">
+<select ng-model="targetId">
+    <option value="">---Choose a Device---</option>
+    <option ng-repeat="target in availableTargets" value="{{target.id}}">{{target.name}}</option>
+</select><br><br>
+<button ng-click="finishAddTarget(targetId)">Pair</button>
+</form>

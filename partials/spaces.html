@@ -3,7 +3,7 @@
         <div class="control">
             <h2>{{space.name}}</h2>
             <div class="icon-bar">
-                <img src="img/{{target}}-inverted.png" ng-repeat="target in space.targets"/>
+                <img src="img/{{target}}-inverted.png" ng-repeat="target in space.targets | limitTo:5"/>
             </div>
         </div>
     </div>
