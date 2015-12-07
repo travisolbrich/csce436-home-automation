@@ -52,6 +52,7 @@ chiAppControllers.controller('SpaceController', ['$scope', '$rootScope', 'ngDial
             $scope.targets = space.targets;
             $scope.availableTargets = targets;
             $scope.lightSlider = 10;
+            $scope.soundSlider = 11;
             $scope.tempSlider = {
                 value: 71,
                 options: {
