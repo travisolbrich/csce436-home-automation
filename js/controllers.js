@@ -51,9 +51,21 @@ chiAppControllers.controller('SpaceController', ['$scope', '$rootScope', 'ngDial
             $rootScope.title = space.name;
             $scope.targets = space.targets;
             $scope.availableTargets = targets;
+            $scope.lightSlider = 10;
+            $scope.tempSlider = {
+                value: 71,
+                options: {
+                    floor: 60,
+                    ceil: 80
+                }
+            };
 
             $scope.addTarget = function () {
                 ngDialog.open({template: 'partials/addTarget.html', scope: $scope})
+            };
+
+            $scope.openControl = function (control) {
+                ngDialog.open({template: 'partials/targets/'+control+'.html', scope: $scope})
             };
 
             $scope.goToSpace = function(spaceName) {

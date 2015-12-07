@@ -3,6 +3,8 @@
 var chiApp = angular.module('chiApp', [
     'ngRoute',
     'ngDialog',
+    'mp.colorPicker',
+    'rzModule',
     'chiAppControllers'
 ]);
 

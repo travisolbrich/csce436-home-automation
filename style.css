@@ -68,3 +68,7 @@ html {
 .header > a > img {
     height: 50px;
 }
+
+.target-popup {
+    text-align: center;
+}
